@@ -9,11 +9,23 @@ header {
     padding-bottom: 5px;
     background: -webkit-linear-gradient(0deg, $light-primary-color, $primary-color);
 
-    .menu-links{
+    .menu-links {
         display: flex;
         gap: 50px;
-        color: $primary-text;
+        
         font-weight: 700;
         font-size: 26;
+        a{
+            color: $primary-text;
+            text-decoration: none;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        .menu-links {
+            gap: 20px;
+        }
     }
 }

@@ -1,0 +1,143 @@
+@import "../../../colors-variables.scss";
+
+.main-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 560px;
+
+    h2 {
+        color: $primary-text;
+        font-size: 46px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+    }
+}
+
+.secondary-section {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    height: 450px;
+
+    h3 {
+        color: $primary-text;
+        font-size: 36px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+    }
+
+    p {
+        color: #000000;
+        font-size: 26px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+    }
+}
+
+.about-section {
+    background-color: $secondary-color;
+}
+
+.diferencial-section {
+    background-color: $primary-color;
+}
+
+.contact-section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    height: 450px;
+
+    .contact-text {
+        color: $primary-color;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+
+        h2 {
+            font-size: 46px;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 26px;
+            font-weight: 500;
+        }
+    }
+
+    button {
+        border: none;
+        border-radius: 25px;
+        background: -webkit-linear-gradient(0deg, $light-primary-color, $primary-color);
+        padding: 20px 40px;
+        ;
+
+        a {
+            color: $primary-text;
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+
+}
+
+.background-image {
+    background-image: url('../../../assets/code-notebook.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.image-section {
+    width: 350vw;
+    height: 50vh;
+    max-height: 380px;
+    max-width: 480px;
+    position: relative;
+
+    img {
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    h2 {
+        font-size: 56px;
+    }
+}
+
+@media (max-width: 900px) {
+    h2 {
+        font-size: 36px;
+    }
+
+    .main-section {
+        justify-content: center;
+    }
+
+    .secondary-section {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .diferencial-section {
+        flex-direction: column-reverse;
+    }
+
+    .image-section {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .contact-section {
+        height: auto;
+    }
+}
