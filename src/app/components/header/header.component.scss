@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 5px 20px;
+    background: -webkit-linear-gradient(0deg, #31baf4, #1B7DC7);
+    width: auto;
+
+    .menu-links{
+        display: flex;
+        gap: 50px;
+        color: #ffffff;
+    }
+}
