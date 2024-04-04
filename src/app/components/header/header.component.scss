@@ -1,15 +1,19 @@
+@import "../../../colors-variables.scss";
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    padding: 5px 20px;
-    background: -webkit-linear-gradient(0deg, #31baf4, #1B7DC7);
-    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: -webkit-linear-gradient(0deg, $light-primary-color, $primary-color);
 
     .menu-links{
         display: flex;
         gap: 50px;
-        color: #ffffff;
+        color: $primary-text;
+        font-weight: 700;
+        font-size: 26;
     }
 }
