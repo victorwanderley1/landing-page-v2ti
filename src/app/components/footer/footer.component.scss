@@ -1,0 +1,15 @@
+@import "../../../colors-variables.scss";
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: -webkit-linear-gradient(0deg, $primary-color, $light-primary-color);
+}
+p{
+    font-size: 20px;
+    font-weight: 600;
+    color: $primary-text;
+}
