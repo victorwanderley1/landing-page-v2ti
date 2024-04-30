@@ -2,23 +2,37 @@
 
 header {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     padding-top: 5px;
-    padding-bottom: 5px;
     background: -webkit-linear-gradient(0deg, $light-primary-color, $primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    z-index: 99999;
+    box-shadow: 0 0 8px $light-primary-color;
 
     .menu-links {
         display: flex;
         gap: 50px;
         
         font-weight: 700;
-        font-size: 26;
         a{
+            font-size: 26px;
             color: $primary-text;
             text-decoration: none;
+            transition: 500ms;
         }
+        a:hover{
+            color: yellowgreen;
+            font-size: 30px;
+        }
+    }
+    &.rolagem {
+        background-color: $primary-color;
     }
 }
 
