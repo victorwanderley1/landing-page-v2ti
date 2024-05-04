@@ -11,7 +11,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    transition: .5s;
+    transition: 500ms;
     z-index: 99999;
     box-shadow: 0 0 8px $light-primary-color;
 
@@ -33,6 +33,7 @@ header {
     }
     &.rolagem {
         background-color: $primary-color;
+        height: 13%;
     }
 }
 
