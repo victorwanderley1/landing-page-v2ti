@@ -74,10 +74,10 @@ header {
       height: auto;
       transform: scale(0.8); // Escala menor
     }
-    
+
     .menu-links {
       gap: 1.5rem; // Reduz espaçamento entre links
-      
+
       a {
         font-size: 1rem; // Texto ligeiramente menor
         padding: 0.3rem 0.8rem; // Padding menor nos links
@@ -104,19 +104,19 @@ header {
         padding: 0.3rem 0.8rem;
       }
     }
-    
+
     // Header menor para mobile quando rolando
     &.rolagem {
       padding: 0.5rem 1rem; // Padding ainda menor em mobile
-      
+
       img {
         width: 80px; // Logo ainda menor em mobile
         height: auto;
       }
-      
+
       .menu-links {
         gap: 0.8rem;
-        
+
         a {
           font-size: 0.85rem;
           padding: 0.2rem 0.6rem;
