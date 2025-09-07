@@ -1,44 +1,248 @@
 <app-header></app-header>
 <main>
-    <section id="beggin" class="main-section pad-20 background-image">
-        <h2>Transformando<br />
-            ideias em soluções<br />
-            digitais.</h2>
-    </section>
-    <section id="about" class="about-section secondary-section pad-20">
-        <div>
-            <h3>Sobre nós</h3>
-            <p>Somos uma equipe apaixonada por tecnologia, determinada a transformar ideias em realidade digital. Embora
-                sejamos uma empresa nova, nossa expertise nos impulsiona a alcançar novos patamares no desenvolvimento
-                de software. Estamos aqui para oferecer soluções inovadoras e sob medida para o seu negócio.</p>
+  <!-- Hero Section -->
+  <section id="beggin" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="gradient-text">Transformando</span><br />
+          <span class="typing-text">ideias em soluções</span><br />
+          <span class="highlight-text">digitais inovadoras</span>
+        </h1>
+        <p class="hero-subtitle">
+          Desenvolvemos soluções tecnológicas sob medida para impulsionar seu
+          negócio ao próximo nível
+        </p>
+        <div class="hero-buttons">
+          <button class="btn-primary pulse-animation">
+            <a href="#contact">Começar Projeto</a>
+          </button>
+          <button class="btn-secondary">
+            <a href="#about">Conhecer Mais</a>
+          </button>
         </div>
-        <div class="image-section">
-            <img ngSrc="./assets/equipe.jpg" fill>
+      </div>
+      <div class="hero-visual">
+        <div class="floating-cards">
+          <div class="card card-1">💻</div>
+          <div class="card card-2">🚀</div>
+          <div class="card card-3">⚡</div>
+          <div class="card card-4">🎯</div>
         </div>
-    </section>
-    <section class="diferencial-section secondary-section pad-20">
-        <div class="image-section">
-            <img ngSrc="./assets/aperto-de-mao.jpg" fill>
+      </div>
+    </div>
+    <div class="hero-background"></div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <h2 class="section-title">Nossos Serviços</h2>
+      <p class="section-subtitle">
+        Soluções completas para sua transformação digital
+      </p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Desenvolvimento Web</h3>
+          <p>
+            Sites e aplicações web modernas, responsivas e otimizadas para
+            performance
+          </p>
+          <div class="service-tech">
+            <span>Angular</span>
+            <span>React</span>
+            <span>Vue.js</span>
+          </div>
         </div>
-        <div>
-            <h3>Diferencial Competitivo</h3>
-            <p>Em um mercado saturado de opções, buscamos nos destacar pelo nosso compromisso com a excelência e pela
-                qualidade incomparável dos nossos serviços. Nossa abordagem centrada no cliente e nossa paixão pela
-                tecnologia nos diferenciam, tornando-nos o parceiro ideal para todas as suas necessidades de
-                desenvolvimento de software.</p>
+
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Apps Mobile</h3>
+          <p>
+            Aplicativos nativos e híbridos para iOS e Android com experiência
+            excepcional
+          </p>
+          <div class="service-tech">
+            <span>React Native</span>
+            <span>Flutter</span>
+            <span>Ionic</span>
+          </div>
         </div>
-    </section>
-    <section id="contact" class="contact-section">
-        <div class="contact-info pad-20">
-            <div class="contact-text">
-                <h2>Pronto para Transformar sua Ideia em Realidade Digital?</h2>
-                <p>Entre em contato conosco hoje mesmo para agendar uma consulta e descobrir como podemos ajudar a
-                    impulsionar o sucesso do seu negócio através do desenvolvimento de software personalizado.</p>
+
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3>Backend & APIs</h3>
+          <p>
+            Sistemas robustos, escaláveis e seguros para sustentar suas
+            aplicações
+          </p>
+          <div class="service-tech">
+            <span>Node.js</span>
+            <span>.NET</span>
+            <span>Python</span>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">☁️</div>
+          <h3>Cloud & DevOps</h3>
+          <p>
+            Infraestrutura em nuvem e automação para máxima eficiência
+            operacional
+          </p>
+          <div class="service-tech">
+            <span>AWS</span>
+            <span>Azure</span>
+            <span>Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2>Sobre a V2TI</h2>
+          <p class="highlight">
+            Somos uma equipe apaixonada por tecnologia, determinada a
+            transformar ideias em realidade digital.
+          </p>
+          <p>
+            Nossa expertise e inovação nos impulsionam a alcançar novos
+            patamares no desenvolvimento de software. Oferecemos soluções
+            personalizadas que agregam valor real ao seu negócio.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">50+</div>
+              <div class="stat-label">Projetos Entregues</div>
             </div>
-            <button><a
-                    href="https://api.whatsapp.com/send?phone=5584999589090&text=Olá%20gostaria%20de%20fazer%um%orçamento"
-                    target="_blank">Entre em contato conosco</a></button>
+            <div class="stat-item">
+              <div class="stat-number">100%</div>
+              <div class="stat-label">Satisfação do Cliente</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">24/7</div>
+              <div class="stat-label">Suporte Técnico</div>
+            </div>
+          </div>
         </div>
-    </section>
+        <div class="about-visual">
+          <div class="image-container">
+            <img ngSrc="./assets/equipe.jpg" fill alt="Nossa equipe" />
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Differential Section -->
+  <section class="differential-section">
+    <div class="container">
+      <div class="differential-content">
+        <div class="differential-visual">
+          <div class="image-container">
+            <img ngSrc="./assets/aperto-de-mao.jpg" fill alt="Parceria" />
+            <div class="image-overlay"></div>
+          </div>
+        </div>
+        <div class="differential-text">
+          <h2>Nosso Diferencial</h2>
+          <div class="differentials-list">
+            <div class="differential-item">
+              <div class="diff-icon">✨</div>
+              <div>
+                <h4>Excelência Técnica</h4>
+                <p>Qualidade incomparável em cada linha de código</p>
+              </div>
+            </div>
+            <div class="differential-item">
+              <div class="diff-icon">🎯</div>
+              <div>
+                <h4>Foco no Cliente</h4>
+                <p>Abordagem centrada nas suas necessidades específicas</p>
+              </div>
+            </div>
+            <div class="differential-item">
+              <div class="diff-icon">⚡</div>
+              <div>
+                <h4>Agilidade</h4>
+                <p>Entrega rápida sem comprometer a qualidade</p>
+              </div>
+            </div>
+            <div class="differential-item">
+              <div class="diff-icon">💡</div>
+              <div>
+                <h4>Inovação</h4>
+                <p>Sempre utilizando as tecnologias mais atuais</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-background"></div>
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-text">
+          <h2>Pronto para Transformar sua Ideia em Realidade Digital?</h2>
+          <p>
+            Entre em contato conosco hoje mesmo e descubra como podemos
+            impulsionar o sucesso do seu negócio através de soluções
+            tecnológicas personalizadas.
+          </p>
+
+          <div class="contact-features">
+            <div class="feature-item">
+              <span class="feature-icon">💬</span>
+              <span>Consultoria Gratuita</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">⏱️</span>
+              <span>Resposta em 24h</span>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon">🏆</span>
+              <span>Garantia de Qualidade</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <button class="btn-whatsapp">
+            <a
+              href="https://api.whatsapp.com/send?phone=5545988237636&text=Olá%20gostaria%20de%20fazer%20um%20orçamento"
+              target="_blank"
+            >
+              <span class="whatsapp-icon">📱</span>
+              Falar no WhatsApp
+            </a>
+          </button>
+
+          <div class="contact-info-items">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <span>contato&#64;v2ti.com</span>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <span>(45) 98823-7636</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 <app-footer />

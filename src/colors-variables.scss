@@ -1,5 +1,36 @@
+// Primary Colors
 $primary-text: #ffffff;
-$secondary-text: #1B7DC7;
-$primary-color: #1B7DC7;
-$light-primary-color: #31baf4c2;
-$secondary-color: #4D7395;
+$secondary-text: #1b7dc7;
+$primary-color: #1b7dc7;
+$light-primary-color: #31baf4;
+$secondary-color: #4d7395;
+
+// Extended Color Palette
+$accent-color: #ffd700;
+$accent-hover: #ffa500;
+$success-color: #25d366;
+$warning-color: #ff6b35;
+$error-color: #ff4757;
+
+// Neutral Colors
+$dark-primary: #1a1a2e;
+$dark-secondary: #16213e;
+$light-gray: #f8f9fa;
+$medium-gray: #6c757d;
+$border-color: rgba(255, 255, 255, 0.1);
+
+// Gradients
+$primary-gradient: linear-gradient(135deg, #1b7dc7 0%, #31baf4 100%);
+$accent-gradient: linear-gradient(45deg, #ffd700, #ffa500);
+$dark-gradient: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #1b7dc7 100%);
+
+// Shadows
+$box-shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
+$box-shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.1);
+$box-shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.2);
+$box-shadow-colored: 0 10px 30px rgba(27, 125, 199, 0.2);
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
