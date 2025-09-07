@@ -13,6 +13,6 @@ export class HeaderComponent {
   @HostListener('window:scroll', [])
   onWindowScroll() {
     const scrollOffset = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-    this.isScrolled = scrollOffset > 10;
+    this.isScrolled = scrollOffset > 100; // Aumenta o threshold para 100px
   }
 }

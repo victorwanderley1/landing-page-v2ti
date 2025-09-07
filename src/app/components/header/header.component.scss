@@ -12,13 +12,13 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); // Transição mais suave
   z-index: 99999;
   box-shadow: 0 2px 20px rgba(27, 125, 199, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
   img {
-    transition: transform 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); // Transição suave para a logo
 
     &:hover {
       transform: scale(1.05);
@@ -29,13 +29,14 @@ header {
     display: flex;
     gap: 2rem;
     align-items: center;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); // Transição suave para o menu
 
     a {
       font-size: 1.1rem;
       font-weight: 500;
       color: $primary-text;
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); // Transição suave para os links
       position: relative;
       padding: 0.5rem 1rem;
       border-radius: 25px;
@@ -65,11 +66,22 @@ header {
 
   &.rolagem {
     background: rgba(27, 125, 199, 0.98);
-    padding: 0.8rem 2rem;
+    padding: 0.5rem 2rem; // Reduzido ainda mais o padding
     box-shadow: 0 4px 25px rgba(27, 125, 199, 0.4);
 
     img {
-      transform: scale(0.9);
+      width: 100px; // Reduz significativamente o tamanho da logo
+      height: auto;
+      transform: scale(0.8); // Escala menor
+    }
+    
+    .menu-links {
+      gap: 1.5rem; // Reduz espaçamento entre links
+      
+      a {
+        font-size: 1rem; // Texto ligeiramente menor
+        padding: 0.3rem 0.8rem; // Padding menor nos links
+      }
     }
   }
 }
@@ -90,6 +102,25 @@ header {
       a {
         font-size: 0.9rem;
         padding: 0.3rem 0.8rem;
+      }
+    }
+    
+    // Header menor para mobile quando rolando
+    &.rolagem {
+      padding: 0.5rem 1rem; // Padding ainda menor em mobile
+      
+      img {
+        width: 80px; // Logo ainda menor em mobile
+        height: auto;
+      }
+      
+      .menu-links {
+        gap: 0.8rem;
+        
+        a {
+          font-size: 0.85rem;
+          padding: 0.2rem 0.6rem;
+        }
       }
     }
   }
